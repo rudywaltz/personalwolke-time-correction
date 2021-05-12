@@ -2,14 +2,20 @@
 
 With cypress you can book your entire month in under few minutes.
 
+
+https://user-images.githubusercontent.com/395555/118042743-bd64a500-b374-11eb-93b5-252155e90b44.mp4
+
+
+
 ## preparation
 ```bash
 nvm use
 npm i
 ```
+copy your personalWolke user/password to the `.env` file base on `.env.example`
 
 you need to add all your desired booking to the
-./cypress/fixtures/timecorrection.js
+`./cypress/fixtures/timecorrection.js`
 
 **Important**
 - don't forget the double array (it is needed because script support multiple time range)
