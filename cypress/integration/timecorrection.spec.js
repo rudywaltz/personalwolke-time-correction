@@ -31,7 +31,7 @@ context('PersonalWolke', () => {
         .type(description)
       cy.get('#wf_startRequest_button')
         .click()
-      cy.url()
+      cy.url({ timeout: 15000 })
         .should('include','https://personalwolke.at/webdesk3/wf_getMyOpenRequests.act')
 
     })
