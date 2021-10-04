@@ -4,10 +4,10 @@
   "description": "Time Correction automation bot",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^9.0.0"
+    "dotenv": "10.0.0"
   },
   "devDependencies": {
-    "cypress": "7.3.0"
+    "cypress": "8.5.0"
   },
   "scripts": {
     "debug": "cypress open",
