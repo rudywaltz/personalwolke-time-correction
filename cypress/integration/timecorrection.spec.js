@@ -1,7 +1,7 @@
 const timeCorrections = require('./../fixtures/timecorrection')
 context('PersonalWolke', () => {
   const currentYear = new Date().getFullYear()
-   
+
   beforeEach(() => {
     cy.visit('https://personalwolke.at/webdesk3/login')
 
