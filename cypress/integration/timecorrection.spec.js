@@ -8,7 +8,7 @@ context('PersonalWolke', () => {
     cy.get('.login-buttons .btn').click()
   })
 
-  timeCorrections.forEach(({ day, month, time, description, year = 2021}) => {
+  timeCorrections.forEach(({ day, month, time, description, year = 2022}) => {
     it(`TimeCorrection: ${year}-${month}-${day}: ${description}`, () => {
       cy.visit(`https://personalwolke.at/webdesk3/Zeitkorrektur$EM.proc?from_date=${day}.${month}.${year}`)
       cy.intercept('/webdesk3/Zeitkorrektur$E*').as('changeAbsentType')
