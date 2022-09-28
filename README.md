@@ -19,7 +19,7 @@ you need to add all your desired booking to the
 
 **Important**
 - don't forget the double array (it is needed because script support multiple time range)
-- absent type will be Home Office always
+- absent type by default is home office but you can specify in absent field (what is optional). if you are use the personalWolke in different language probably you need add the absent type always (should be matching the string in the select on the UI)
 
 simple format:
 ```js
@@ -28,6 +28,17 @@ simple format:
   month:5,
   time: [['09:00', '17:30']],
   description:'Area demo, meetings'
+}
+```
+
+with absent type:
+```js
+{
+  day:6,
+  month:5,
+  time: [['09:00', '17:30']],
+  description:'Area demo, meetings'
+  absent: 'present'
 }
 ```
 
