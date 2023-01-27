@@ -37,7 +37,7 @@ with absent type:
   day:6,
   month:5,
   time: [['09:00', '17:30']],
-  description:'Area demo, meetings'
+  description:'Area demo, meetings',
   absent: 'present'
 }
 ```
