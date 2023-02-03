@@ -59,6 +59,15 @@ nvm use
 npm run booking
 ```
 
+## Approve (For Managers)
+If you're managing a team with this you can automate the approval of the requests of your team members.
+Up to a 100 at a time, so you might need to run this multiple times if you're dealing with a huge team stacked up a lot to approve.
+
+```bash
+nvm use
+npm run approve
+```
+
 ## Debug/more fun
 If you wanna see how cypress made your time correction you can run the electron app
 
