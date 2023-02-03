@@ -11,7 +11,8 @@
   },
   "scripts": {
     "debug": "cypress open",
-    "booking": "cypress run"
+    "booking": "cypress run --spec \"./cypress/e2e/timecorrection.cy.js\"",
+    "approve": "cypress run --spec \"./cypress/e2e/approve.cy.js\""
   },
   "author": "",
   "license": "ISC"
