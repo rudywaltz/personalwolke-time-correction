@@ -15,14 +15,15 @@ context('PersonalWolke', () => {
       cy.visit(`https://personalwolke.at/webdesk3/Zeitkorrektur$EM.proc?from_date=${day}.${month}.${year}`)
       cy.intercept('/webdesk3/Zeitkorrektur$E*').as('changeAbsentType')
 
-      // cy.get('#addTimeCorrection').click()
-      // cy.wait('@changeAbsentType')
 
       time.forEach(([from, to], index) => {
         cy.get(`#timeCorrections\\.${index}\\.absence_code\\:input`)
         .select(absent)
         .blur()
-      cy.wait('@changeAbsentType')
+
+      if(absent !== 'present') {
+        cy.wait('@changeAbsentType')
+      }
 
       cy.get(`#timeCorrections\\.0\\.from_time\\:visibleInput`)
         .as('inputFrom')
