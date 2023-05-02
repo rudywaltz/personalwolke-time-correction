@@ -22,7 +22,7 @@ context('PersonalWolke', () => {
         .blur()
 
       if(absent !== 'present') {
-        cy.wait('@changeAbsentType')
+        // cy.wait('@changeAbsentType')
       }
 
       cy.get(`#timeCorrections\\.0\\.from_time\\:visibleInput`)
@@ -32,7 +32,7 @@ context('PersonalWolke', () => {
         cy.get('@inputFrom').type(from)
         .blur()
 
-      cy.wait('@changeAbsentType')
+      // cy.wait('@changeAbsentType')
 
       cy.get(`#timeCorrections\\.${index}\\.to_time\\:visibleInput`)
         .as('inputTo')
@@ -42,7 +42,7 @@ context('PersonalWolke', () => {
         .type(to)
 
       cy.get('@inputTo').blur()
-      cy.wait('@changeAbsentType')
+      // cy.wait('@changeAbsentType')
 
         if(index !== time.length - 1) {
           cy.get('#addTimeCorrection').click()
