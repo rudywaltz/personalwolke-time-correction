@@ -25,7 +25,7 @@ context('PersonalWolke', () => {
         // cy.wait('@changeAbsentType')
       }
 
-      cy.get(`#timeCorrections\\.0\\.from_time\\:visibleInput`)
+      cy.get(`input#timeCorrections\\.0\\.from_time`)
         .as('inputFrom')
         .should('be.visible')
 
@@ -34,7 +34,7 @@ context('PersonalWolke', () => {
 
       // cy.wait('@changeAbsentType')
 
-      cy.get(`#timeCorrections\\.${index}\\.to_time\\:visibleInput`)
+      cy.get(`input#timeCorrections\\.${index}\\.to_time`)
         .as('inputTo')
         .should('be.visible')
 
